@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"  href="Img/Logo/Icon.png">
+    <title>Rabelo III</title>
+
+    <link rel="stylesheet" href="Styles/StylesPadrao.css">
+    <link rel="stylesheet" href="Styles/StylesCardapio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="Js/Script.js"></script>
+</head>
+
+<body>
+    <header class="content">
+        <div class="boxCabecalho">
+            <div class="logo"> <img src="Img/Logo/Logo3.png" alt="Logo da pizzaria Rabelo" class="logoImg"></div>
+        </div>
+    </header>
+
+    <nav class="menuPags">
+        <div class="listaLinks">
+            <a href="#" class="linksPag um"> HOME</a>
+            <a href="#" class="linksPag dois"> SOBRE NÓS</a>
+            <a href="#" class="linksPag tres"> CARDÁPIO</a>
+            <a href="#" class="linksPag quatro"> CONTATOS</a>
+            <a href="#" class="linksPag quinto"> <i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="linksPag sexto"> <i class="bi bi-cart4"></i></a>
+
+        </div>
+    </nav>
+
+    <section class="first-section">
+        <div class="homeConteudo">
+            <div class="boxInterna">
+                <h1>Deixe sua noite mais saborosa!</h1>
+                <h2>Sabores que Deliciam, Massas que Conquistam: A Arte da Pizza e Esfiha na Sua Mesa!</h2>
+                <br>
+
+                <h2>Peça já a sua pizza!!!</h2>
+                <div class="boxBtn">
+                    <button class="prontas">Escolher prontas</button>
+                    <button class="montar">À Moda do cliente</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="sobreNosConteudo">
+            <div class="contentSobre">
+                <h2>Sobre nós</h2>
+                <p>Bem-vindo à Rabelo III, um refúgio culinário que combina tradição, sabor autêntico e uma calorosa hospitalidade. Desde 2008, temos o privilégio de compartilhar nossa paixão pela culinária com você, criando experiências gastronômicas memoráveis para toda a comunidade.</p>
+                <p>Em 2008, um pequeno sonho se materializou quando inauguramos e desde então, a nossa jornada tem sido marcada por uma dedicação incansável à arte de criar pizzas e esfihas que encantam os paladares mais exigentes.</p>
+                <p>Nossa equipe é a espinha dorsal do nosso sucesso. Profissionais apaixonados pela culinária e pelo serviço ao cliente trabalham incansavelmente para garantir que cada visita seja uma experiência extraordinária.</p>
+                <p>Venha conhecer <a href="https://maps.app.goo.gl/zp8yL7yhKN4fNFyg7" target="_blank">Link</a></p>
+            </div>
+
+            <div class="img-local">
+                <img src="Img/PizzaSobre.png" class="imgSobreNos" alt="Ambiente familiar, pizzaria, esfiharia">
+            </div>
+        </div>
+    </section>
+
+    <section class="third-section">
+
+        <!-- Pizza -->
+        <h2>Cardápio de <span>Pizzas</span></h2>
+
+        <div class="itens-cardapio-pizza">
+            <div>
+                <img src="Img/Cardápio/Pizzas/4queijos.jpg" alt="4 queijos">
+                <div class="info">
+                    <h3>4 Queijos</h3>
+                    <h4>8 Fatias <span> R$42,00</span></h4>
+                    <h4>Mussarela, parmesão, catupiry e cheddar. </h4>
+                    <button class="pedir">Pedir agora!</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="Img/Cardápio/Pizzas/Mussarela.jpg" alt="Mussarela">
+                <div class="info">
+                    <h3>Mussarela</h3>
+                    <h4>8 Fatias <span> R$38,00</span></h4>
+                    <h4>Mussarela. </h4>
+                    <button class="pedir">Pedir agora!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- VER MAIS -->
+ 
+        <details class="detailsCardapio" id="detailsCardapio1">
+            <summary class="ver verMaisPizza" onclick="clickVerMaisPizza()">Ver mais </summary>
+
+            <div class="itens-cardapio-pizza">
+            <div>
+                <img src="Img/Cardápio/Pizzas/4queijos.jpg" alt="4 queijos">
+                <div class="info">
+                    <h3>4 Queijos</h3>
+                    <h4>8 Fatias <span> R$42,00</span></h4>
+                    <h4>Mussarela, parmesão, catupiry e cheddar. </h4>
+                    <button class="pedir">Pedir agora!</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="Img/Cardápio/Pizzas/Mussarela.jpg" alt="Mussarela">
+                <div class="info">
+                    <h3>Mussarela</h3>
+                    <h4>8 Fatias <span> R$38,00</span></h4>
+                    <h4>Mussarela. </h4>
+                    <button class="pedir">Pedir agora!</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- VER MENOS -->
+        <summary class="ver verMenosPizza" onclick="clickVerMenosPizza()">Ver Menos </summary>
+        </details>
+
+        <!-- Esfiha -->
+        <h2 class="titleEsfihas">Cardápio de <span>Esfihas Abertas</span></h2>
+        
+        <div class="itens-cardapio-esfihara">
+
+            <div>
+                <img src="Img/Cardápio/Esfihas/carne.jpg" alt="Esfiha de carne">
+                <div class="info">
+                    <h3>Carne</h3>
+                    <h4>1 unidade <span> R$2,50</span></h4>
+                    <h4>Carne. </h4>
+                    <button class="pedir">Pedir agora!</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="Img/Cardápio/Esfihas/frangoCatupiry.jpg" alt="Esfiha de frango com catupiry">
+                <div class="info">
+                    <h3>Frango c/ catupiry</h3>
+                    <h4>1 unidade <span> R$2,50</span></h4>
+                    <h4>Frango e catupiry. </h4>
+                    <button class="pedir">Pedir agora!</button>
+                </div>
+            </div>
+        </div>
+
+        <details class="detailsCardapio" id="detailsCardapio2">
+            <summary class="verMaisEsfihas" onclick="clickVerMaisEsfihas()">Ver mais </summary>
+
+            <div class="itens-cardapio-esfihara">
+
+                <div>
+                    <img src="Img/Cardápio/Esfihas/carne.jpg" alt="Esfiha de carne">
+                    <div class="info">
+                        <h3>Carne</h3>
+                        <h4>1 unidade <span> R$2,50</span></h4>
+                        <h4>Carne. </h4>
+                        <button class="pedir">Pedir agora!</button>
+                    </div>
+                </div>
+    
+                <div>
+                    <img src="Img/Cardápio/Esfihas/frangoCatupiry.jpg" alt="Esfiha de frango com catupiry">
+                    <div class="info">
+                        <h3>Frango c/ catupiry</h3>
+                        <h4>1 unidade <span> R$2,50</span></h4>
+                        <h4>Frango e catupiry. </h4>
+                        <button class="pedir">Pedir agora!</button>
+                    </div>
+                </div>
+            </div>
+
+            <summary class="verMenosEsfihas" onclick="clickVerMenosEsfihas()">Ver Menos </summary>
+        </details>
+
+        <!-- Porções -->
+        <h2 class="titlePorcoes">Cardápio de <span>Porções</span></h2>
+
+        <div class="itens-cardapio-porcoes">
+            <div>
+                <img src="Img/Cardápio/Porções/Calabresa.png" alt="Calabresa">
+                <div class="info">
+                    <h3>Calabresa</h3>
+                    <h4>1 unidade <span> R$x,xx</span></h4>
+                    <h4>Calabresa. </h4>
+                    <button class="pedir">Pedir agora!</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="Img/Cardápio/Porções/Batata frita.png" alt="Batata frita com cheddar e bacon.">
+                <div class="info">
+                    <h3>Batata frita</h3>
+                    <h4>1 unidade <span> R$x,xx</span></h4>
+                    <h4>Batata, cheddar e bacon. </h4>
+                    <button class="pedir">Pedir agora!</button>
+                </div>
+            </div>
+        </div>
+
+    <details class="detailsCardapio" id="detailsCardapio3">
+        <summary class="verMaisPorcoes" onclick="clickVerMaisPorcoes()">Ver mais </summary>
+
+        <div class="itens-cardapio-porcoes">
+            <div>
+                <img src="Img/Cardápio/Porções/Calabresa.png" alt="Calabresa">
+                <div class="info">
+                    <h3>Calabresa</h3>
+                    <h4>1 unidade <span> R$x,xx</span></h4>
+                    <h4>Calabresa. </h4>
+                    <button class="pedir">Pedir agora!</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="Img/Cardápio/Porções/Batata frita.png" alt="Batata frita com cheddar e bacon.">
+                <div class="info">
+                    <h3>Batata frita</h3>
+                    <h4>1 unidade <span> R$x,xx</span></h4>
+                    <h4>Batata, cheddar e bacon. </h4>
+                    <button class="pedir">Pedir agora!</button>
+                </div>
+            </div>
+        </div>
+
+
+        <summary class="verMenosPorcoes" onclick="clickVerMenosPorcoes()">Ver Menos </summary>
+    </details>
+
+    </section>
+
+
+
+</body>
+
+<section id="contatos">
+    <footer class="rodape">
+        <h1 class="titleRodape"> Alguma dúvida?</h1>
+        <p class="txtRodape"> Obrigado pela sua atenção, aqui vai alguns dos meus contatos:</p>
+        <p class="txtRodape"> Telefone fixo: 4881-2876</p>
+        <p class="txtRodape"> Telefone fixo: 4608-0177</p>
+        <p class="txtRodape"> WhatsApp: (11) 99462-7331</p>
+        <div class="boxRodapeImg">
+            <a href="https://www.instagram.com/rabelolll/" target="_blank"> <img class="redeImg" src="Img/instagram2.png" alt="ERRO"> </a>
+            <a href="https://api.whatsapp.com/send?phone=11994627331" target="_blank"> <img class="redeImg" src="Img/whatsapp.png" alt="ERRO"> </a>
+        </div>
+        <p class="txtRodape">  ©2024 Nicolas de Almeida Sousa. Todos os direitos Reservados.</p>
+        
+        <center>
+        <a href="https://www.flaticon.com/br/icones-gratis/logotipo-do-instagram" title="logotipo do instagram ícones">Logotipo do instagram ícones criados por justicon - Flaticon</a>
+        </center>
+    </footer>
+</section>
+</html>
