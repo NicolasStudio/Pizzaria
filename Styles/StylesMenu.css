@@ -1,0 +1,118 @@
+/* Cabeçalho */
+.boxCabecalho {
+    width: 100%;
+    height: auto;
+    background: #222;
+    box-shadow: 0px 3px 0.25rem #777;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0.5rem 0; /* Espaço interno opcional */
+}
+
+.logoImg {
+    width: clamp(8rem, 20vw, 14rem);
+    cursor: pointer;
+    margin: 0;
+    display: block;
+}
+
+
+/* Menu de links */
+.menuPags {
+    position: relative;
+    width: 100%;
+    background-color: #777;
+    border-top: 3px solid #333;
+    box-shadow: 0px 3px 0.25rem #222;
+    z-index: 9;
+}
+
+.listaLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 0.8rem 0;
+    background-color: #777;
+}
+
+.linksPag {
+    font-size: clamp(0.9rem, 1.7vw, 1.3rem);
+    font-weight: 600;
+    color: #E6E6E6;
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.linksPag:hover {
+    color: #F84B46;
+}
+
+.quinto:hover {
+    color: #016B38;
+}
+
+/* Botão do menu hamburguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    z-index: 999;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #E6E6E6;
+    border-radius: 2px;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menuPags {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        border-top: none;
+        border-bottom: 3px solid #333;
+    }
+
+    .menuPags.active {
+        display: flex;
+    }
+
+    .listaLinks {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .linksPag {
+        font-size: 1.2rem;
+    }
+
+    .logoImg {
+        width: 10rem;
+    }
+}

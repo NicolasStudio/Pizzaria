@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: none;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Estilo do pop-up */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #E6E6E6;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.popup-content h2 {
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.inputSabores {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #111;
+    color: #000;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+.preco {
+    font-weight: bold;
+    color: #016B38;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.popup-botoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-confirmar, .btn-cancelar {
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    transition: all 400ms ease-in-out;
+    overflow: none;
+    cursor: pointer;
+}
+
+.btn-confirmar{
+    border: 3px solid #016B38;
+}
+
+.btn-cancelar {
+    border: 3px solid #F84B46;
+}
+
+.btn-confirmar {
+    background-color: #016B38;
+    color: white;
+}
+
+.btn-cancelar {
+    background-color: #F84B46;
+    color: white;
+}
+
+.btn-confirmar:hover{
+    background-color: transparent;
+    color: #016B38;
+    transition: all 400ms ease-in;
+}
+
+.btn-confirmar:active {
+    background-color: #016B38;
+}
+
+.btn-cancelar:hover{
+    background-color: transparent;
+    color: #F84B46;
+    transition: all 400ms ease-in;
+}
+
+.btn-cancelar:active {
+    background-color: #F84B46;
+}

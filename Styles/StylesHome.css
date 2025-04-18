@@ -1,0 +1,103 @@
+.first-section {
+    background-image: linear-gradient(rgba(29, 29, 29, 0.7), rgba(29, 29, 29, 0.7)), url(/Img/PizzaHome.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    height: 60rem;
+}
+
+/* Primeira sessão Home */
+h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 2rem;
+    font-style: bold;
+}
+
+.homeConteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.boxInterna {
+    margin-top: 5%;
+    width: 100%;
+    max-width: 1000px;
+    height: 32rem;
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeConteudo h1 {
+    color: #E6E6E6;
+    font-size: clamp(1.8rem, 3vw, 2.2rem); /* aumentei o mínimo de 1.5rem para 1.8rem */
+    margin-bottom: 1rem;
+}
+
+.homeConteudo h2 {
+    width: 95%;
+    color: #F84B46;
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem); /* aumentei o mínimo de 1rem para 1.4rem */
+    margin-bottom: 2rem;
+}
+
+.prontas,
+.montar {
+    font-size: clamp(1rem, 1.5vw, 1.5rem); /* aumentei o mínimo de 0.8rem para 1rem */
+}
+
+.boxBtn a{
+    text-decoration: none;
+    color: #E6E6E6;
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    transition: all 400ms ease-in-out;
+}
+
+.boxBtn {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.prontas,
+.montar {
+    z-index: 1;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border: 3px solid #323585;
+    border-radius: 10px;
+    background-color: rgba(66, 69, 159, 1);
+    color: #E6E6E6;
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    transition: all 400ms ease-in-out;
+}
+
+.prontas:hover,
+.montar:hover {
+    background-color: transparent;
+    color: #E6E6E6;
+    transition: all 400ms ease-in;
+}
+
+.prontas:active,
+.montar:active {
+    background-color: rgb(80, 84, 192);
+}
